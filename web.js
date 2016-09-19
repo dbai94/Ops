@@ -6,10 +6,6 @@ var controller = Botkit.slackbot({
   //or a "logLevel" integer from 0 to 7 to adjust logging verbosity
 });
 
-// connect the bot to a stream of messages
-controller.spawn({
-  token: <xoxb-78067553283-clfT0AWSiL0RGhf70NIfmg6C>,
-}).startRTM()
 
 // give the bot something to listen for.
 controller.hears('hello',['direct_message','direct_mention','mention'],function(bot,message) {
